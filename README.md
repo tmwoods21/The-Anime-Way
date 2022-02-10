@@ -1,1 +1,1 @@
-# The-Anime-Way
+# the-anime-way
