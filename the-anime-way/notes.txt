@@ -1,0 +1,32 @@
+import { useState, useEffect } from "react"
+import { Link } from 'react-router-dom'
+
+function AnimeLists(){
+    let URL = 'https://api.jikan.moe/v4/anime'
+    const [animeList, setAnimeList] = useState([])
+
+    useEffect (()=>{
+        fetch(URL)
+        .then((res)=> res.json())
+        .then((json) => setAnimeList(json.results))
+    }, [])
+    console.log(animeList)
+    return(
+        <div>{animeList}</div>
+        
+        //<section>
+            //{ animeList.map((animeList)=> {
+                
+                //<div>{animeList.title}</div>
+            
+                
+            //})}
+        //</section>
+    )
+
+}export default AnimeLists
+
+
+const [animeList, setAnimeList] = useState([])
+
+const [search, setSearch] = useState("")
