@@ -1,6 +1,6 @@
 function Home(){
     return(
-        <p>this is the home page</p>
+        <h1>The Anime Way</h1>
     )
 }
 
