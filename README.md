@@ -25,7 +25,7 @@ Have you ever finished an anime show and thought, "what now"? With "The Anime Wa
 
 ### Stretch Goals
 -Have a user like button for each show
--Create an account option
+-Create a user account
 -Have an "extra"/want more page:
    -favorite anime quotes
    -quizzes
