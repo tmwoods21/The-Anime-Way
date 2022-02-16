@@ -2,6 +2,9 @@
 
 https://the-anime-way.herokuapp.com/
 
+## Technologies Used
+-React, CSS, Heroku
+
 ## Description
 The Anime Way is an anime database. It shows my top anime picks as a recommendation for users to look at. It also allows users to look at other animes to get specific information on them.
 
@@ -26,3 +29,7 @@ Have you ever finished an anime show and thought, "what now"? With "The Anime Wa
 -Have an "extra"/want more page:
    -favorite anime quotes
    -quizzes
+   
+   
+   
+API https://jikan.moe/
