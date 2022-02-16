@@ -4,25 +4,27 @@ function Result(props){
     const {results} = props
     
         return(
-            results.map((anime, index)=>{
+            <div className="anime-list" >
+            {results.map((anime, index)=>{
                 return(
               
-            <div className="anime-list" key={index}>
-               {!anime ? <h3>loading anime</h3> : 
-                <div className="card">
+            
+               !anime ? <h3>loading anime</h3> : 
+                <div className="card" key={index}>
                     <h3>{anime.title}</h3>
                     <Link to={`/details/${anime.mal_id}`}><img src={anime.image_url}></img></Link>
                     {/* <h3>{anime.synopsis}</h3>
                     <h3>{anime.episodes}</h3> */}
                 
                 </div>
-               }
                
-           </div> 
+               
+          
                 )
 
         
-    })
+    })}
+     </div> 
         ) 
 }
 

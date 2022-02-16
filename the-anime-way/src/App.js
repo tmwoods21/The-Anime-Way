@@ -12,6 +12,8 @@ function App() {
   
   const [topAnime, setMyTopAnime] = useState([])
   const [results, setResults] = useState([])
+  const [gif, setGif] = useState()
+  const [showCover, setShowCover] = useState([])
 
 
   
@@ -47,6 +49,8 @@ function App() {
     console.log("Results")
     
   }, []);
+
+  
 
   return (
     

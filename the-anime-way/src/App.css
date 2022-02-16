@@ -96,7 +96,8 @@ input {
 }
 
 .anime-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
 	flex-wrap: wrap;
   
 	margin-top: 32px;
@@ -104,8 +105,7 @@ input {
 }
 
 .card {
-  /* flex: 1 1 33.333%;
-  max-width: 33.333%; */
+  
   padding: 16px 8px;
 } 
 
