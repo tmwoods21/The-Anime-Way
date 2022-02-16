@@ -23,8 +23,12 @@ function Details(){
         <div className="details-container">
             <Link to="/">Home</Link>
             <h2>{anime.title}</h2>
+            <br/>
             <h3>{anime.synopsis}</h3>
-            <h3>{anime.episodes}</h3>
+            <br />
+            <h3>Episodes: {anime.episodes}</h3>
+            <br />
+            
             
         </div>
      

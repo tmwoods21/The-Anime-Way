@@ -6,11 +6,13 @@ function Sidebar(props){
     return(
         <aside>
             <nav>
-                <h3>My Top 3 Anime</h3>
+                <div className='top3'><h3>My Top 3 Anime</h3></div>
                 {topAnime.map((anime, index)=>{
                     return(
+                        
                         <ul>
                         <a 
+                            
                             href={anime.url}
                             key={anime.mal_id}
                             target="_blank" 

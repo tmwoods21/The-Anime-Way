@@ -2,67 +2,121 @@
 
 *{
   margin: 0;
-  padding: 0;
-}
+  padding:0;
+  box-sizing: border-box;
+  color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
 
-/* #dsbg {
-  position:relative;
-  height:281px;
-  width:450px;
-  margin:0 auto;
-}
-
-#dsgb img {
-  position:absolute;
-  left:0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-}
-
-#dsgb img.top:hover {
-  opacity:0;
-} */
-
-body {
-  /* background-image: url("https://i.pinimg.com/originals/30/8a/92/308a926d3ea0d90163f34c7209cfbc78.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;  
-  min-height: 100vh; */
-  
-}
+} 
 
 
 
-.App {
-  justify-content: center;
+
+
+/* .App { */
+  /* justify-content: center; */
   /* color: white; */
   
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 100vh; */
   /* opacity: 0; */
 
   
   
-}
 
 .title {
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 30px;
+  padding-top: 35px;
+  padding-bottom: 60px;
+}
+
+
+
+.content-wrap {
+	display: flex;	
+	color: #313131;
+	font-size: 24px;
+	margin-bottom: 16px;
 }
 
 .top3 {
-  padding-bottom: 20px;
-  padding-top: 0px;
+  padding-bottom: 15px;
+  padding-left: 15px;
 }
 
+a {
+	display:inline-block;
+	padding: 6px  8px;
+	text-align:left;
 
-/* .animatedClass {
-  background-image: url("/Users/taylorwoods/unit3/project/the-anime-way/The-Anime-Way/the-anime-way/src/components/demon-slayer-bg.gif");
-  opacity: 1;
-} */
+	color: #888;
+	font-size: 16px;
+	margin-bottom: 16px;
+
+	background-color: #EEE;
+	border-radius: 5px;
+	text-decoration: none;
+
+	transition: 0.4s;		
+	}
+
+
+
+
+ .animeSearch {
+    display: flex;
+    justify-content:space-evenly;
+  } 
+
+.search-box {
+      display: flex;
+      justify-content: center;
+      flex: 1 1 0%;
+}
+      
+input {
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  padding: 16px;
+  border-radius: 5px;
+  background-color: #EEE;
+
+  transition: 0.4s;
+
+  background-color: #313131;
+  color: #FFF;
+}
+
+.anime-list {
+  display: flex;
+	flex-wrap: wrap;
+  
+	margin-top: 32px;
+	margin: 32px -8px 0px;
+}
+
+.card {
+  /* flex: 1 1 33.333%;
+  max-width: 33.333%; */
+  padding: 16px 8px;
+} 
+
+.details-container {
+  padding-top: 20px;
+}
+
+	
+
+       
+          
+
+
 

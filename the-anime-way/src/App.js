@@ -59,7 +59,7 @@ function App() {
           topAnime={topAnime}
        />
       
-        <Search 
+      <Search 
           results={results} search = {GetResults}
         />
       </div> 

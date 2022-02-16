@@ -8,10 +8,11 @@ function Search(props){
     }
     return(
        <div className="animeSearch">
-           <div className="animeSearchText"><h3>Search for Animes</h3></div>
-           <form onSubmit={handleSubmit}>
-           <input name="query" type="search"  />
-           <button>Search Anime</button>
+            
+            <form className="search-box" onSubmit={handleSubmit}>
+         
+                <input name="query" type="search"  />
+                <button>Search Anime</button>
            </form>
 
            
