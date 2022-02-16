@@ -16,12 +16,13 @@ Have you ever finished an anime show and thought, "what now"? With "The Anime Wa
 -Have a min of 3 recommended shows for users
 -Have a search feature so users can find a show
 -Have a result page:
-      -image of show
-      -description of show
-      -resources to watch show
--Have an "extra"/want more page:
-      -favorite anime quotes
-      -quizzes
+    -image of show
+    -description of show
+    -resources to watch show
+
 ### Stretch Goals
 -Have a user like button for each show
 -Create an account option
+-Have an "extra"/want more page:
+   -favorite anime quotes
+   -quizzes
