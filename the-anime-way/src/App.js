@@ -4,6 +4,8 @@ import Search from './components/Search'
 import Sidebar from './components/Sidebar'
 import Home from './components/Home'
 import Result from './components/Result'
+import Details from './components/Details'
+import { Routes, Route} from 'react-router-dom'
 
 
 function App() {
@@ -11,12 +13,14 @@ function App() {
   const [topAnime, setMyTopAnime] = useState([])
   const [results, setResults] = useState([])
 
+
   
 
   const GetMyTopAnime = async() => {
     const temp = await fetch(`https://api.jikan.moe/v4/top/anime`)
       .then(res => res.json());
-    setMyTopAnime(temp);
+      console.log(temp)
+    setMyTopAnime(temp.data.splice(0,3));
   }
 
   useEffect(() => {
@@ -47,27 +51,30 @@ function App() {
   return (
     
     <div className="App">
+      
        <Home />
        
-       <div className="sidebar-wrapper">
+      <div className="content-wrapper">
         <Sidebar 
-          topAnime={topAnime} 
+          topAnime={topAnime}
        />
-       <div className="search-wrapper">
+      
         <Search 
           results={results} search = {GetResults}
         />
+      </div> 
       
-       </div>
-       <div>
-         <Result results={results} />
-       </div>
-       
-       </div>
-      
-
+    
+      <Routes>
+           
+           <Route path="/" element={<Result results={results} />} />
+           
+           <Route path="/details/:id" element={<Details />} />
+           
+      </Routes>
 
     </div>
+    
   );
 }
 

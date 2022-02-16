@@ -1,6 +1,10 @@
 function Home(){
     return(
-        <h1>The Anime Way</h1>
+        <div className="title">
+            <h1>The Anime Way</h1>
+        </div>
+        
+        
     )
 }
 

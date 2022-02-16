@@ -1,11 +1,68 @@
+
+
 *{
   margin: 0;
   padding: 0;
+}
+
+/* #dsbg {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#dsgb img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#dsgb img.top:hover {
+  opacity:0;
+} */
+
+body {
+  /* background-image: url("https://i.pinimg.com/originals/30/8a/92/308a926d3ea0d90163f34c7209cfbc78.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;  
+  min-height: 100vh; */
   
 }
+
+
 
 .App {
   justify-content: center;
   /* color: white; */
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  /* opacity: 0; */
+
+  
+  
 }
+
+.title {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.top3 {
+  padding-bottom: 20px;
+  padding-top: 0px;
+}
+
+
+/* .animatedClass {
+  background-image: url("/Users/taylorwoods/unit3/project/the-anime-way/The-Anime-Way/the-anime-way/src/components/demon-slayer-bg.gif");
+  opacity: 1;
+} */
 

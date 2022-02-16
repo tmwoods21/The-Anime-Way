@@ -1,30 +1,35 @@
 import React from 'react'
 
-function Sidebar(){
+function Sidebar(props){
+
+    const {topAnime} = props
     return(
         <aside>
             <nav>
                 <h3>My Top 3 Anime</h3>
+                {topAnime.map((anime, index)=>{
+                    return(
+                        <ul>
+                        <a 
+                            href={anime.url}
+                            key={anime.mal_id}
+                            target="_blank" 
+                            rel="noreferrer">
+                            {anime.title}
+                        </a>
+                        <br></br>
+                        </ul>
+                    
+                    )
+
+                    
+
+                })}
+
+                    
+                
                 <br></br>
-                <ul>
-                <li><a href="#" 
-                target="_blank" 
-                rel="noreferrer">
-                Attack on Titan
-                </a></li>
-                <br></br>
-                <li><a href="#" 
-                target="_blank" 
-                rel="noreferrer">
-                Demon Slayer
-                </a></li>
-                <br></br>
-                <li><a href="#" 
-                target="_blank" 
-                rel="noreferrer">
-                My Hero Academia
-                </a></li>
-                </ul>
+                
             </nav>
         </aside>
     )
