@@ -1,5 +1,7 @@
 # the-anime-way
 
+https://the-anime-way.herokuapp.com/
+
 ## Description
 The Anime Way is an anime database. It shows my top anime picks as a recommendation for users to look at. It also allows users to look at other animes to get specific information on them.
 
